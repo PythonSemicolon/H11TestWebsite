@@ -1,0 +1,935 @@
+:root {
+    --primaryColour: #563C39;
+    --secondaryColour: #AF7A6D;
+    --lightColour: #EAEAEA;
+    --darkColour: #211A1E;
+    --contrastColour: #5688C7;
+    --white: #fff;
+    --mainBorderThickness: 10px solid;
+    --fontFamily: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} /* declare variables */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+} /* reset website */
+
+body {
+    background-color: var(--lightColour);
+    color: var(--darkColour);
+    font-family: var(--fontFamily);
+}
+   
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--contrastColour);
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.image {
+    inline-size: 300px;
+    block-size: auto;
+}
+
+.button {
+    display: inline-block;
+    margin-block: 30px;
+    border: 5px solid var(--contrastColour);
+    border-radius: 70px;
+    padding: 15px;
+}
+
+.aLot {
+    display: grid;
+    gap: 10px;
+}
+
+/* ADVANCED CSS */
+main:not(#firstScreen) {
+    margin-inline-start: 2.5vi;
+}
+
+main a {
+    padding: 0;
+}
+
+#title {
+    font-size: 3.5em;
+    margin-block-end: 2vi;
+    color: var(--contrastColour);
+    grid-column: span 2;
+}
+
+.typewriter {
+    margin-inline-start: 2.5vi;
+    margin-block-start: 2.5vi;
+}
+
+h4 {
+    margin-block-end: 5px;
+    color: var(--primaryColour);
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.05em;
+}
+
+small {
+    font-weight: bold;
+    grid-column: span 3;
+    text-align: center;
+    padding-block-end: 4vh;
+}
+
+table {
+    border: solid 2px var(--primaryColour);
+    border-collapse: collapse;
+    inline-size: 100%;
+    font-size: 1.25em;
+}
+
+td, th {
+    padding: 3px;
+    border: solid 1px var(--primaryColour);
+}
+
+tr:nth-of-type(even) {
+    background-color: var(--white);
+}
+
+/* ADVANCED CSS */
+td:not(:first-of-type) {
+    text-align: center;
+}
+
+.prices {
+    margin: auto;
+    inline-size: 90%;
+}
+
+.media {
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.gridByTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.gridByThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: min-content;
+    align-items: center;
+}
+
+
+/* beginning of top bar css */
+#topBar {
+    border-block-end: 10px solid var(--primaryColour);
+}
+
+#topBar nav>ul {
+    padding: 0;
+    font-size: 3.3vi;
+    text-align: center;
+    margin: 0 0 10px 0 ;
+}
+
+#topBar nav ul li {
+    display: inline-block;
+}
+
+header h1 {
+    font-size: 1.55em;
+    align-content: center;
+}
+
+header h2 {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+header div {
+    align-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: var(--primaryColour);
+}
+
+#topBar nav ul li:nth-of-type(2), #topBar nav ul li:last-of-type {
+    display: none;
+}
+/* end of top bar css */
+
+
+/* beginning of footer css */
+footer {
+    background-color: var(--secondaryColour);
+    justify-items: center;
+    grid-template-columns: auto 1fr auto;
+}
+
+footer a {
+    color: var(--darkColour);
+}
+
+footer nav ul li {
+    padding-block-start: 4vh;
+}
+
+footer nav ul li a {
+    padding: 15px;
+}
+
+footer small {
+    padding-block-start: 5vi;
+}
+
+small a {
+    padding: 7px;
+}
+
+footer div, footer address {
+    text-align: center;
+}
+
+footer div img {
+    inline-size: 100%;
+    block-size: auto;
+}
+/* end of footer css */
+
+
+/* beginning of index css */
+#firstScreen aside {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../images/PoolDog.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    block-size: 100%;
+
+    color: var(--lightColour);
+    padding: 30px;
+}
+
+#firstScreen aside h2 {
+    font-size: 3.5em;
+    grid-column: span 2;
+}
+
+#firstScreen aside h3 {
+    font-size: 2em;
+    grid-column: span 3;
+    margin-block-end: 10vi;
+}
+
+#firstScreen aside p {
+    font-size: 1.25em;
+    grid-column: 2 / 4;
+    text-align: center;
+}
+
+#firstScreen section div img {
+    border-radius: 5%;
+}
+
+#firstScreen section h3 {
+    font-size: 1.5em;
+    margin-block: 20px;
+}
+
+#firstScreen section p {
+    margin-block-end: 20px;
+}
+
+#firstScreen section {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 20px;
+    margin-block-end: 50px;
+    border-block-end: var(--mainBorderThickness) var(--primaryColour);
+}
+
+#firstScreen section p a {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#firstScreen .gridByTwo {
+    gap: 20px;
+}
+
+#testimonials {
+    padding: 10px;
+}
+
+#firstScreen section:last-of-type div img {
+    inline-size: 100px;
+    block-size: auto;
+    border-radius: 50%;
+    justify-self: center;
+    display: block;
+}
+
+.reviews i {
+    color: var(--contrastColour);
+    font-size: 3em;
+    display: inline-block;
+    padding-inline-end: 10px;
+}
+
+.reviews blockquote {
+    display: inline;
+}
+
+.reviews {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0px 0px 5px var(--darkColour);
+    border-radius: 20px;
+    gap: 10px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.reviews span {
+    font-size: 0.9em;
+    color: var(--primaryColour);
+    justify-self: start;
+    display: block;
+}
+
+.reviews img {
+    margin: auto;
+}
+/* end of index css */
+
+
+/* contact css */
+#contact {
+    margin: 20px;
+}
+
+#contact a {
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 0;
+}
+
+#contact h4 {
+    margin-block-start: 40px;
+}
+
+#contact section:last-of-type {
+    margin: 0 2em 2em 2em;
+}
+
+#contact section img {
+    display: none;
+}
+
+#contact .gridByTwo div {
+    grid-column: span 2;
+}
+
+form {
+    padding: 3vi;
+    border: var(--mainBorderThickness) var(--primaryColour);
+}
+
+input, textarea, fieldset, select {
+    border-radius: 7px;
+    font-size: 1rem;
+    border: 1px solid var(--secondaryColour);
+    font-family: var(--fontFamily);
+    background-color: var(--white);
+    vertical-align: middle;
+}
+
+input, textarea, select {
+    block-size: 2.5em;
+}
+
+input:not([type="radio"], [type="checkbox"]), textarea, select {
+    inline-size: 100%;
+}
+
+input:not([type="radio"], [type="checkbox"]), textarea, fieldset, select {
+    margin-block-end: 15px;
+}
+
+input[type="submit"], input[type="reset"] { 
+    border: 2px solid var(--secondaryColour);
+    background-color: var(--white);
+}
+
+textarea {
+    min-block-size: 200px;
+}
+
+fieldset:first-of-type, fieldset:last-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* end of contact css */
+
+
+/* questions css */
+#title.tooBig {
+    font-size: 3em;
+}
+
+#faq {
+    margin-block-end: 3vi;
+    gap: 15px 50px;
+}
+
+#faq h3 {
+    font-size: 1.3em;
+    padding-block: 10px;
+}
+
+#faq h4 {
+    padding-block-start: 20px;
+}
+
+#faq section ul li {
+	list-style-image: url("../images/DogFace.svg");
+    padding: 5px;
+}
+
+#faq section ul li a {
+    font-weight: lighter;
+}
+
+
+#faq section {
+    grid-column: span 2;
+    margin-block-end: 20px;
+}
+
+#faq details {
+    border: 5px solid var(--primaryColour);
+    border-radius: 10px;
+    padding: 10px;
+    margin-inline-end: 10px;
+    grid-column: span 2;
+}
+
+#faq details summary {
+    padding-block-end: 5px;
+}
+
+#faq details summary::before {
+    content: "Q: ";
+}
+/* end of questions css */
+
+
+/* daycare and grooming css */
+.services {
+    margin-inline: 2em;
+}
+
+.services section {
+    margin-block: 2em;
+}
+
+.services img, .services section, dl {
+    grid-column: span 2;
+
+}
+
+.services h4 {
+    font-size: 1.35em;
+    text-align: center;
+}
+
+.services p {
+    text-align: center;
+    padding-block-end: 20px;
+}
+
+.services li {
+    list-style-image: url("../images/GreenCheckMark.svg");
+    padding: 10px;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--secondaryColour);
+}
+
+dd {
+    margin: 0 0 0.75em 2em;
+}
+
+dl {
+    margin-block-end: 15px;
+}
+
+dl div {
+    grid-column: span 2;
+}
+/* end of daycare and grooming css */
+
+
+/* about css */
+#about section {
+    inline-size: 96%;
+    margin: auto;
+}
+
+#about section h3 {
+    display: inline-block;
+    padding: 25px 10px 15px 0;
+    vertical-align: middle;
+    font-size: 1.3em;
+}
+
+#about section>p {
+    padding-block: 25px;
+    border-block-start: var(--mainBorderThickness) var(--secondaryColour);
+}
+
+.icon {
+    inline-size: 40px;
+    vertical-align: middle;
+}
+
+.staff {
+    border-block-start: var(--mainBorderThickness) var(--secondaryColour);
+    padding: 30px;
+    text-align: center;
+}
+
+.staff h4 {
+    color: var(--contrastColour);
+    font-size: 1.25em;
+}
+
+.staff img {
+    inline-size: 80%;
+    margin-inline: 10%;
+    margin-block: 10px;
+}
+/* end of about css */
+
+
+@media all and (min-width: 500px) {
+    /* top bar css */
+    #topBar nav>ul {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.15em;
+    }
+    
+    /* index css */
+    #firstScreen section {
+        border: var(--mainBorderThickness) var(--primaryColour);
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px var(--darkColour);
+        padding: 20px;
+        margin: 3em;
+    }
+
+    .reviews span {
+        justify-self: end;
+    }
+
+    /* contact css */
+    #contact .gridByTwo div {
+        grid-column: span 1;
+    }
+}
+
+
+@media all and (min-width: 768px) {
+
+    /* general css */
+    a:hover {
+        text-decoration: underline;
+        color: var(--secondaryColour);
+    }
+
+    footer a:hover {
+        color: var(--primaryColour);
+    }
+
+    .button:hover {
+        border: 5px solid var(--secondaryColour);
+    }
+
+    main section>div {
+        overflow: hidden;
+    }
+
+    #title {
+        margin-inline-start: 15px;
+        margin-block-start: 10px;
+    }
+
+    .image {
+        inline-size: calc(40vi - 40px);
+    }
+
+    .aLot {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .typewriter {
+        display: inline-block;
+    }
+    
+    .typewriter h2 {
+        overflow: hidden;
+        border-right: 3px solid var(--contrastColour);
+        white-space: nowrap;
+        margin: 0 auto 0 0;
+        animation: 
+          typing 1.5s steps(12),
+          blinking 1s step-end infinite;
+    }
+
+    /* ADVANCED CSS */  
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    
+        to {
+            inline-size: 100%; 
+        }
+    }
+    
+    /* ADVANCED CSS */
+    @keyframes blinking {
+        from {
+            border: none;
+        }
+    
+        50% {
+            border-right: 3px solid var(--contrastColour);
+        }
+
+        to {
+            border: none;
+        }
+    }
+
+    /* beginning of top bar css */
+    header h2 {
+        font-size: 0.9em;
+        text-align: start;
+    }
+    
+    .logo {
+        margin-inline-start: 1vi;
+    }
+
+    #topBar {
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+    }
+
+    #topBar nav ul li:nth-of-type(2), #topBar nav ul li:last-of-type {
+        display: inline;
+    }
+
+    #topBar nav ul li a {
+        padding: 5px;
+    }
+
+    #topBar nav>ul {
+        margin-block-end: 0;
+    }
+    /* end of top bar css */
+
+
+    /* footer css */
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer div img {
+        inline-size: 200px;
+        block-size: 200px;
+    }
+    /* end of footer css */
+
+    
+    /* index css */
+    #firstScreen aside {
+        block-size: 100vh;
+    }
+
+    #firstScreen aside h2 {
+        margin-inline-start: 2.5vi;
+        margin-block-start: 2.5vi;
+        font-size: 4em;
+    }
+
+    #firstScreen aside h3 {
+        margin-inline-start: 2.5vi;
+        font-size: 2.5em;
+    }
+
+    #firstScreen aside p {
+        margin-block-start: 5vi;
+        font-size: 1.5em;
+    }
+
+    #firstScreen section:first-of-type img {
+        float: left;
+        margin-inline-end: 30px;
+    }
+
+    #firstScreen section:nth-of-type(2) img {
+        float: right;
+        margin-inline-start: 30px;
+    }
+
+    #firstScreen section, #firstScreen section div img {
+        border-radius: 0;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+    }
+
+    .reviews span {
+        grid-column: span 2;
+    }
+
+    .reviews i {
+        padding-inline-end: 0px;
+    }
+
+    .reviews img {
+        grid-row: span 2;
+        align-self: center;
+    }
+    /* end of index css */
+
+
+    /* contact css */
+    #contact>div:not(.typewriter) {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    #contact section:first-of-type {
+        display: inline;
+    }
+
+    #contact section:last-of-type {
+        position: relative;
+    }
+    
+    /* ADVANCED CSS */
+    #contact section img {
+        display: inline-block;
+        min-inline-size: 135px;
+        max-inline-size: 15%;
+        block-size: auto;
+        position: absolute;
+        inset-inline-end: -30px;
+        inset-block-start: 0px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
+    fieldset {
+        grid-column: 2 / 3;
+    }
+
+    label {
+        text-align: end;
+    }
+
+    /* ADVANCED CSS */
+    label:not([for="message"]) {
+        align-content: center;
+    }
+    
+    label:not(fieldset label)::after {
+        content: ":";
+    }
+
+    input:not([type="radio"], [type="checkbox"]), textarea, fieldset, select {
+        margin-block-end: 0px;
+    }
+
+    #actions {
+        grid-column: 2;
+    }
+
+    input, select {
+        margin-block-end: 0px;
+        max-inline-size: fit-content;
+    }
+
+    input[type="reset"] {
+        margin-inline-start: 10px;
+    }
+
+    input[type="reset"]:hover, input[type="submit"]:hover {
+        border: 2px solid var(--primaryColour);
+    }
+    /* end of contact css */
+
+
+    /* questions css */
+    #faq details {
+        grid-column: 1 / 2;
+    }
+
+    #faq section {
+        grid-column: 2 / 3;
+        grid-row: 2 / 11;
+        align-self: start;
+    }
+    /* end of questions css */
+
+
+    /* daycare and grooming css */
+    .services {
+        margin-block-end: 3em;
+        gap: 20px;
+    }
+    
+    #daycare section:first-of-type {
+        grid-column: 2 / 3;
+        align-items: center;
+    }
+
+    #daycare img {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        align-self: center;
+    }
+
+    #grooming section:first-of-type {
+        grid-column: 1 / 2;
+    }
+
+    #grooming img {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        align-self: center;
+    }
+
+    #grooming section:last-of-type {
+        grid-column: 2 / 3;
+    }
+
+    dl {
+        grid-column: 1 / 2;
+    }
+    /* end of daycare and grooming css */
+
+
+    /* about css */
+    .staff {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .staff img {
+        grid-row: 1 / 3;
+    }
+
+    .staff h4 {
+        align-self: center;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    /* index css */
+    #testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .reviews:last-of-type {
+        display: none;
+    }
+
+    /* daycare and grooming css */
+    #daycare section:last-of-type {
+        grid-column: 2 / 3;
+    }
+
+    #daycare img {
+        grid-row: 1 / 3;
+        inline-size: calc(40vi - 40px);
+        justify-self: center;
+    }
+
+    dl div {
+        grid-column: span 1;
+    }
+
+    dd {
+        margin: 0;
+    }
+
+    dl {
+        gap: 30px;
+    }
+
+    /* contact css */
+    fieldset:first-of-type, fieldset:last-of-type {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /* index css */
+    .videos {
+        grid-row: span 2;
+    }
+
+    .reviews:last-of-type {
+        display: grid;
+    }
+
+    /* about css */
+    #about section:last-of-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about section:last-of-type div:first-of-type{
+        grid-column: span 2;
+        border-block-end: var(--mainBorderThickness) var(--secondaryColour);
+    }
+
+    .staff {
+        border: var(--mainBorderThickness) var(--secondaryColour);
+        border-radius: 30px;
+        box-shadow: 0 0 5px var(--darkColour);
+        margin: 1.5em;
+    }
+}

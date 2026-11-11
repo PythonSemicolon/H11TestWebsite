@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/site.css" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Puppy Spa & Play - Conact Us</title>
+</head>
+<body>
+    <div id="topBar"> 
+        <header>
+            <img class="logo" src="./images/DogLogo.png" alt="Dog caricature being bathed" width="64" height="64">
+            <div>
+                <h1>PUPPY SPA & PLAY</h1>
+                <h2>puppyspaandplay.com</h2>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./daycare.html">Daycare</a></li>
+                <li><a href="./grooming.html">Grooming</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+            </ul>
+        </nav>
+        </div>
+    <div class="typewriter">
+        <h2 id="title">CONTACT US</h2>
+    </div>
+    <main id="contact">
+        <div>
+            <section class="gridByTwo">
+                <div>
+                    <h4>Phone</h4>
+                    <a href="tel:123-456-7890">+1 (123) 456 7890</a>
+                </div>
+
+                <div>
+                    <h4>Email</h4>
+                    <a href="mailto:PuppySpaAndPlay@gmail.com">PuppySpaAndPlay@gmail.com</a>
+                </div>
+
+                <div>
+                    <h4>Address</h4>
+                    <address>
+                        <p>
+                            1234, Fake Street<br>
+                            Ottawa, ON<br>
+                            Canada<br>
+                            1A2 B3C
+                        </p>
+                    </address>
+                </div>
+
+                <div>
+                    <h4>Hours</h4>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>8 am - 6 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>8 am - 6 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>8 am - 6 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>8 am - 6 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>8 am - 8 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10 am - 8 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10 am - 6 pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h4>Send Us An Email</h4>
+                <form method="get" action="#">
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" id="name" size="30" maxlength="30" placeholder="Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" size="50" maxlength="60" placeholder="Email">
+
+                    <label for="phone">Phone number</label>
+                    <input type="text" name="phone" id="phone" size="16" maxlength="16" placeholder="Phone">
+
+                    <label for="reason">Reason for Message</label>
+                    <select name="reason" id="reason">
+                        <option>--Select One--</option>
+                        <optgroup label="Booking">
+                            <option value="grooming">Booking an appointment for grooming</option>
+                            <option value="daycare">Booking an appointment for daycare</option>
+                            <option value="cancel">Cancellation</option>
+                        </optgroup>
+
+                        <optgroup label="Questions/Concerns">
+                            <option value="breed">Clarifying if a pet breed is accepted</option>
+                            <option value="allergy">Pet allergies/accommodations</option>
+                            <option value="private">Private rooms</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+
+                    <fieldset>
+                        <legend>Type of Pet</legend>
+                        <div>
+                            <input type="radio" name="pet" id="dog">
+                            <label for="dog">Dog</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pet" id="cat">
+                            <label for="cat">Cat</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pet" id="rabbit">
+                            <label for="rabbit">Rabbit</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pet" id="bird">
+                            <label for="bird">Bird</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Traits of Pet</legend>
+                        <div>
+                            <input type="checkbox" name="traits" id="small">
+                            <label for="small">Small</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="med">
+                            <label for="med">Medium</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="large">
+                            <label for="large">Large</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="traits" id="short">
+                            <label for="short">Short Hair</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="long">
+                            <label for="long">Long Hair</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="fluffy">
+                            <label for="fluffy">Fluffy</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="traits" id="tail">
+                            <label for="tail">Docked Tail</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="shy">
+                            <label for="shy">Shy</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="agro">
+                            <label for="agro">Aggressive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="traits" id="social">
+                            <label for="social">Social</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="play">
+                            <label for="play">Playful</label>
+                            <br>
+                            <input type="checkbox" name="traits" id="energy">
+                            <label for="energy">Energetic</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                    <div id="actions">
+                        <input type="submit" value="Send Email">
+                        <input type="reset" value="Clear">
+                    </div>
+                </form>
+                <img src="images/DogHead.png" alt="The head of a brown dog.">
+            </section>
+        </div>
+    </main>
+    <footer class="gridByThree">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./daycare.html">Daycare</a></li>
+                <li><a href="./grooming.html">Grooming</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="./images/DogLogo.png" alt="Dog caricature being bathed" width="200" height="200">
+            <h2>PUPPY SPA & PLAY</h2>
+        </div>
+        <address>
+            <p>
+                1234, Fake Street<br>
+                Ottawa, ON<br>
+                Canada<br>
+                1A2 B3C
+            </p>
+        </address>
+        <small>
+            <a href="https://www.flaticon.com/free-icon/dog_13702699">Dog icon taken by Erifqi Zetiawan - flaticon</a>
+            <br><br>
+            <a href="https://www.flaticon.com/free-icon/dog_15996291">Dog head taken by Maxim Kulikov - flaticon</a>
+        </small>
+    </footer>
+</body>
+</html>
